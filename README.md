@@ -1,40 +1,41 @@
-9.2 Installatie Stappen
-
-Project downloaden
+PROJECT DOWNLOADEN
 
 git clone https://github.com/Jonah246755/sportconnect1.git
+
 cd sportconnect1
 
-Dependencies installeren
+DEPENDENCIES INSTALLEREN
 
 composer install
 npm install
 
-Environment opzetten
+ENVIROMENT OPZETTEN
 
 cp .env.example .env
+
 php artisan key:generate
 
-Database aanmaken
+DATABASE AANMAKEN
 
 php artisan migrate:fresh --seed
 
-Frontend builden
+FRONTEND BUILDEN
 
 npm run build
 
-Server starten
+SERVER SSTARTEN
 
 php artisan serve
 
 Open browser: http://localhost:8000
 
-9.3 Inloggen
+9.3 INLOGGEN
 Gebruik deze gegevens:
 
 Email: admin@sportconnect.nl
+
 Wachtwoord: password
 
-9.4 Tests draaien
+TESTS DRAAIEN
 php artisan test
 Verwacht: 59 tests passing
